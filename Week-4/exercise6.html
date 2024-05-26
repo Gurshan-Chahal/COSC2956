@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function square(a) {
+        // let msg = "This is an original function";
+        return function (b) {
+          return a * b;
+        };
+        // return newFunction;
+      }
+      const squareIt = square(5);
+      alert(`The square of 5 is ${squareIt(5)}`);
+    </script>
+  </body>
+</html>
+ 
